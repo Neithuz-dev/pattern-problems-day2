@@ -9,13 +9,13 @@ void pattern22(int n) {
             int left = j;
             int right = size - 1 - j;
             int bottom = size - 1 - i;
-            
             int min_dist = std::min(std::min(top, bottom), std::min(left, right));
             std::cout << n - min_dist << " ";
         }
         std::cout << "\n";
     }
 }
+
 int main() {
     int n;
     std::cout << "Enter the value of n: ";
